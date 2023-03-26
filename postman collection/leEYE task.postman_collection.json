@@ -1,0 +1,117 @@
+{
+	"info": {
+		"_postman_id": "c379a414-fe4e-4cc3-b9f8-9f36515ce163",
+		"name": "leEYE task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25417500"
+	},
+	"item": [
+		{
+			"name": "view product",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3000/user/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"productname\":\"saree\",\r\n    \"description\":\"WINE SAREE WITH BLOUSE\",\r\n     \"imgToUrl\":[\"http://cdn.shopify.com/s/files/1/0682/3755/8034/products/lbl101ks627dsc_2925.jpg?v=1672243157\",\"https://static01.manyavar.com/uploads/dealimages/13685/zoomimages/delicate-wine-saree-sb14595-422-13.jpg\",\"https://diamu.com.bd/wp-content/uploads/2020/09/Triveni-Party-Wear-Saree-Keesthy-Vol-4-255581.jpg\"],\r\n    \"price\": 4500\r\n   \r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/user/addproduct",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"addproduct"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "edit and update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n   \"price\":999\r\n    \r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/user/shirt",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"shirt"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "delete product",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"t-shirt\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/user/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"user",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
